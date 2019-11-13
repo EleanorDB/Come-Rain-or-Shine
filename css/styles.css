@@ -3,6 +3,7 @@ body {
 /* medium turquouise */
   font-family: arial;
   margin: 0px;
+  padding-top: 5rem;
 }
 
 h1, h2 {
@@ -24,4 +25,8 @@ h2 {
   border-style: solid;
   border-color: black;
   margin: 0 auto;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+text-align: center;
 }
