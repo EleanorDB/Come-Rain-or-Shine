@@ -34,4 +34,12 @@ $(document).ready(function () {
         $('#desc').html(desc);
         $('#icon').attr('src', icon);
     }
+
+    var dt = new Date();
+    document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+
+    var dt = new Date();
+    document.getElementById("date").innerHTML = dt.toLocaleDateString();
+
+    
 });
