@@ -4,16 +4,14 @@ body {
   font-family: arial;
   margin: 0px;
   padding-top: 5rem;
+  background-image: linear-gradient(to right top, #ff99cc, #e3a6ec, #bbb4ff, #8ec2ff, #66ccff);
 }
-
 h1, h2 {
   text-align: center;
 }
-
 h1 {
   font-size: 5em;
 }
-
 h2 {
   font-size: 2.5em;
 }
@@ -21,28 +19,22 @@ h2 {
   padding: 3rem 1.5rem;
 text-align: center;
 }
-
 h4 , h5, h6, span {
 	margin: 0;
 }
-
 h4 {
 	font-size: 16rem;
 }
-
 h5 {
 	font-size: 3rem;
 }
-
 h6 {
 	font-size: 1.4rem;
 }
-
 .degree {
 	font-size: 6rem;
 	font-weight: 600;
 }
-
 .boxcontainer {
 	max-width: 550px;
 	height: 100vh;
@@ -53,19 +45,21 @@ h6 {
 	grid-template-rows: 20% 80%;
 	padding: 25px 5px;
 }
-
 .degrees {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: center;
 	margin-left: 2rem;
 }
-
 img {
 	width: 80px;
 	filter: grayscale(100%);
 }
-
+.smallboxcontainer {
+  width: 30%;
+  height: 50vh;
+  border: 1px solid #374955;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -73,16 +67,13 @@ img {
   text-align: center;
   text-decoration: none;
 }
-
 .fa:hover {
   opacity: 0.7;
 }
-
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
-
 .fa-twitter {
   background: #55ACEE;
   color: white;
