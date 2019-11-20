@@ -47,7 +47,7 @@ h6 {
 .boxcontainer {
 	max-width: 550px;
 	height: 100vh;
-	border: 1px solid black;
+	border: 1px solid #374955;
 	margin: 0 auto;
 	text-align: center;
 	display: grid;
@@ -69,6 +69,7 @@ img {
   width: 30%;
   height: 50vh;
   border: 1px solid #374955;
+  margin: 0 auto;
 }
 
 .fa {
