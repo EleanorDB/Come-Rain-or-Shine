@@ -15,7 +15,10 @@ $(document).ready(function () {
 
     // Call Weather
     function weather(lat, long) {
-        var URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
+      const fixedLat = lat.toFixed(2);
+      const fixedLong = long.toFixed(2);
+      console.log(fixedLat, fixedLong)
+        var URL = `https://fcc-weather-api.glitch.me/api/current?lat=${fixedLat}&lon=${fixedLong}`;
 
         $.getJSON(URL, function(data) {
             updateDOM(data);
@@ -41,5 +44,5 @@ $(document).ready(function () {
     var dt = new Date();
     document.getElementById("date").innerHTML = dt.toLocaleDateString();
 
-    
+
 });
