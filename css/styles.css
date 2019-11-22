@@ -86,10 +86,8 @@ h6 {
 }
 
 .whiteboxcontainer {
-  max-width: 450px;
-  min-width: 300px;
-  max-height: 200px;
-  min-height: 150px;
+  max-width: 80%;
+  height: auto;
   background-color: white;
   text-align: left;
   padding: 8px 8px;
