@@ -1,7 +1,8 @@
 body {
   color: rgb((72,209,204))
 /* medium turquouise */
-  font-family: arial;
+  font-family: 'Roboto', sans-serif;
+  color: white;
   margin: 0px;
   padding-top: 5rem;
   background-image: linear-gradient(to right top, #ff99cc, #e3a6ec, #bbb4ff, #8ec2ff, #66ccff);
@@ -12,16 +13,18 @@ h1, h2 {
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 5em;
 }
 
 h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: 2.5em;
 }
 
 .starter-template {
   padding: 3rem 1.5rem;
-text-align: center;
+text-align: left;
 }
 
 h4 , h5, h6, span {
@@ -29,14 +32,23 @@ h4 , h5, h6, span {
 }
 
 h4 {
+  font-family: 'Roboto', sans-serif;
 	font-size: 16rem;
 }
 
+@media screen and (max-width: 678px) {
+  h4 {
+     font-size: 10rem;
+  }
+}
+
 h5 {
+  font-family: 'Roboto', sans-serif;
 	font-size: 3rem;
 }
 
 h6 {
+  font-family: 'Roboto', sans-serif;
 	font-size: 1.4rem;
 }
 
@@ -47,8 +59,8 @@ h6 {
 .boxcontainer {
 	max-width: 550px;
 	max-height: 100vh;
-  min-height: 500px;
-	border: 5px solid #374955;
+  min-height: 600px;
+	border: 5px solid white;
   border-radius: 25px;
 	margin: 0 auto;
 	text-align: center;
@@ -67,10 +79,22 @@ h6 {
 .smallboxcontainer {
   width: 300px;
   height: 50vh;
-  border: 5px solid #374955;
+  border: 5px solid white;
   border-radius: 25px;
   margin: 0 auto;
   padding: 25px 25px;
+}
+
+.whiteboxcontainer {
+  width: 450px;
+  height: 180px;
+  background-color: white;
+  text-align: left;
+  padding: 8px 8px;
+  font-size: 1em;
+  color: #374955;
+  margin: auto;
+  box-shadow: 5px 5px 10px #374955;
 }
 
 .fa {
@@ -95,5 +119,12 @@ h6 {
 .fa-instagram {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+.curly {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  text-align: left;
   color: white;
 }
