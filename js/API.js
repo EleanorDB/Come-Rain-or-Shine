@@ -30,13 +30,13 @@ $(document).ready(function() {
     var temp = Math.round(data.main.temp_max);
     var desc = data.weather[0].description;
     var icon = data.weather[0].icon;
-
     var weathergroup = data.weather[0].main;
 
     $("#city").html(city);
     $("#temp").html(temp);
     $("#desc").html(desc);
     $("#icon").attr("src", icon);
+    $("#weathergroup").html(weathergroup);
   }
 
   var dt = new Date();
@@ -45,3 +45,18 @@ $(document).ready(function() {
   var dt = new Date();
   document.getElementById("date").innerHTML = dt.toLocaleDateString();
 });
+//if (weathergroup == 'Rain' && hairtype == 'Afro'){
+//  hairproduct = afrorain
+//
+
+var hairproduct;
+
+if (weathergroup === "Rain"){
+  hairproduct = "curlyrain"
+} else if (weathergroup === "Snow") {
+  hairproduct = "curlysnow"
+} else if (weathergroup === "Clear"){
+  hairproduct = "curlysun"
+} else {
+  hairproduct = "curlyneutral"
+}
