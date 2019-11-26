@@ -31,6 +31,8 @@ $(document).ready(function() {
     var desc = data.weather[0].description;
     var icon = data.weather[0].icon;
 
+    var weathergroup = data.weather[0].main;
+
     $("#city").html(city);
     $("#temp").html(temp);
     $("#desc").html(desc);
