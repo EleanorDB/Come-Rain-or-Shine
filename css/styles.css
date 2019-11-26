@@ -155,6 +155,16 @@ h6 {
   color: white;
 }
 
+.fa {
+  padding: 7px 7px 7px 7px;
+  width: 30px;
+  font-size: 30px;
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
 #submit {
   cursor: pointer;
 }
