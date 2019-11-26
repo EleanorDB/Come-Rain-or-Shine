@@ -96,29 +96,56 @@ h6 {
   box-shadow: 5px 5px 10px #374955;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+.fa:visited {
+  color: #ffffff;
 }
+
 .fa:hover {
   opacity: 0.7;
+  color: ##ffffff;
 }
+
+.fa:active {
+  color: #ffffff;
+}
+
 .fa-facebook {
-  background: #3B5998;
+  background-color: #3B5998;
+  border: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 .fa-twitter {
   background: #55ACEE;
+  border: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .fa-instagram {
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: #D6249F;
+  background: radial-gradient(circle at 30% 107%, #FDF497 0%, #FDF497 5%, #FD5949 45%,#D6249F 60%,#285AEB 90%);
+  border: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .curly {
@@ -126,4 +153,8 @@ h6 {
   font-size: 3em;
   text-align: left;
   color: white;
+}
+
+#submit {
+  cursor: pointer;
 }
