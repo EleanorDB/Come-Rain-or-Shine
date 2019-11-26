@@ -73,7 +73,6 @@ h6 {
 	margin-left: 2rem;
 }
 
-
 .smallboxcontainer {
   width: 300px;
   height: 50vh;
@@ -96,9 +95,28 @@ h6 {
   box-shadow: 5px 5px 10px #374955;
 }
 
+.accountcontainer {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  float: center;
+}
+
+.googlecontainer {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  float: center;
+}
+
 .socialcontainer {
+  width: 100%;
   text-align: center;
   padding: 30px 50px;
+  align-items: flex-end;
+  float: bottom;
 }
 
 .fa:visited {
@@ -170,6 +188,22 @@ h6 {
   flex-wrap: nowrap;
 }
 
+.form {
+  text-align: center;
+  max-width: 120vw;
+}
+
 #submit {
   cursor: pointer;
+}
+
+#curlyaccount {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  color: white;
+}
+
+#accountpara {
+  text-align: center;
 }
