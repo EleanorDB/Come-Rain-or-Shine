@@ -22,7 +22,7 @@ h2 {
 
 .starter-template {
   padding: 3rem 1.5rem;
-text-align: left;
+  text-align: left;
 }
 
 h4 , h5, h6, span {
@@ -94,6 +94,11 @@ h6 {
   color: #374955;
   margin: auto;
   box-shadow: 5px 5px 10px #374955;
+}
+
+.socialcontainer {
+  text-align: center;
+  padding: 30px 50px;
 }
 
 .fa:visited {
