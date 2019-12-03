@@ -193,6 +193,26 @@ h6 {
   max-width: 100vw;
 }
 
+.productcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+#skinproductimage {
+  width: 75%;
+  height: 75%;
+}
+
+#hairproductimage {
+  width: 75%;
+  height: 75%;
+}
+
+#bagproductimage {
+  width: 75%;
+  height: 75%;
+}
+
 #submit {
   cursor: pointer;
 }
@@ -206,8 +226,4 @@ h6 {
 
 #accountpara {
   text-align: center;
-}
-
-.col-sm1 {
-  width: 100%;
 }

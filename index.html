@@ -101,18 +101,31 @@
           <div class="boxcontainer">
             <h5 id="city">London</h5>
             <div class="middle">
-              <img src="" alt="icon" id="icon" />
+              <img src="images/Default Weather.png" alt="icon" id="icon" />
               <div class="degrees">
                 <h4 id="temp">7</h4>
                 <span class="degree">&#176;</span>
               </div>
-              <h6 id="desc">Rain</h6>
+              <h6 id="desc">Sunny</h6>
             </div>
           </div>
           <br />
         </div>
 
         <div class="col-sm">
+
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary" id="option1">
+              <input type="radio" name="options" autocomplete="off" value="Straight">Straight
+            </label>
+            <label class="btn btn-secondary active" id="option2">
+              <input type="radio" name="options" autocomplete="off" checked value="Curly">Curly
+            </label>
+            <label class="btn btn-secondary" id="option3">
+              <input type="radio" name="options" autocomplete="off" value="Afro">Afro
+            </label>
+          </div>
+          <br>
           <div class="whiteboxcontainer">
             <p>
               <strong>
@@ -139,25 +152,25 @@
           <div class="col-sm">
             <div class="smallboxcontainer">
               <p>To have <strong>Luscious Locks</strong></p>
-              <!--IMAGE OF PRODUCT --->
-              <p> Name of Product</p>
+              <div class="productcontainer"><img id="hairproductimage" src="images/Curly Sunny.png"></div>
+              <p id=hairproductname> Bumble & Bumble Save the Day Daytime Protective Repair Fluid
+              </p>
             </div>
             <br />
           </div>
           <div class="col-sm">
             <div class="smallboxcontainer">
               <p>To have <strong>Glowing Skin</strong></p>
-              <!--IMAGE OF PRODUCT --->
-              <p id="weathergroup">Failed</p>
-              <p id="hairproduct">Fail</p>
+              <div class="productcontainer"><img id="skinproductimage" src="images/Normal Sunny.png"></div>
+              <p>La Roche-Posay Effaclar H Moisturiser</p>
             </div>
             <br />
           </div>
           <div class="col-sm">
             <div class="smallboxcontainer">
               <p>To have a <strong>Prepared Handbag</strong></p>
-              <!--IMAGE OF PRODUCT --->
-              <p>Name of Product</p>
+              <div class="productcontainer"><img id="bagproductimage" src="images/Sunny.png"></div>
+              <p id="bagproductname">Rayban Clubmaster Classic</p>
             </div>
           </div>
         </div>
