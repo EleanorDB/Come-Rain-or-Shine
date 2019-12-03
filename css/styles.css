@@ -198,6 +198,12 @@ h6 {
   justify-content: center;
 }
 
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
 #skinproductimage {
   width: 75%;
   height: 75%;
