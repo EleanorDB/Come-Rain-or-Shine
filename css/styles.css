@@ -227,3 +227,8 @@ h6 {
 #accountpara {
   text-align: center;
 }
+
+#link {
+  color: #48339c;
+  text-decoration: underline;
+}
