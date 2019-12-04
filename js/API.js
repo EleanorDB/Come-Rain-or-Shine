@@ -207,7 +207,7 @@ $(document).ready(function () {
       } else if (weathergroup === 'Snow') {
         document.getElementById('bagproductimage').src = 'images/Snow.png'
       } else if (weathergroup === 'Clear') {
-        document.getElementById('bagproductimage').src = 'images/Sunny.png'
+        document.getElementById('bagproductimage').src = 'images/Neutral.png'
       } else {
         document.getElementById('bagproductimage').src = 'images/Neutral.png'
       }
