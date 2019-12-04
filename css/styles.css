@@ -26,51 +26,51 @@ h2 {
 }
 
 h4 , h5, h6, span {
-	margin: 0;
+  margin: 0;
 }
 
 h4 {
   font-family: 'Roboto', sans-serif;
-	font-size: 16rem;
+  font-size: 16rem;
 }
 
 @media screen and (max-width: 678px) {
   h4 {
-     font-size: 10rem;
+    font-size: 10rem;
   }
 }
 
 h5 {
   font-family: 'Roboto', sans-serif;
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 h6 {
   font-family: 'Roboto', sans-serif;
-	font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .degree {
-	font-size: 6rem;
-	font-weight: 600;
+  font-size: 6rem;
+  font-weight: 600;
 }
 .boxcontainer {
-	max-width: 550px;
-	max-height: 100vh;
+  max-width: 550px;
+  max-height: 100vh;
   min-height: 600px;
-	border: 5px solid white;
+  border: 5px solid white;
   border-radius: 25px;
-	margin: 0 auto;
-	text-align: center;
-	display: grid;
-	grid-template-rows: 20% 80%;
-	padding: 25px 5px;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  padding: 25px 5px;
 }
 .degrees {
-	display: grid;
-	grid-template-columns: auto auto;
-	justify-content: center;
-	margin-left: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin-left: 2rem;
 }
 
 .smallboxcontainer {
@@ -211,7 +211,7 @@ h6 {
 }
 
 .button-labels {
-text-align: center;
+  text-align: center;
 }
 
 .ethos {
