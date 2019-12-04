@@ -34,6 +34,8 @@ $(document).ready(function () {
     var weathergroup = data.weather[0].main;
     var hairtype;
     var hairproduct;
+    var skintype;
+    var skinproduct;
 
     // if (weathergroup === 'Rain') {
     //   console.log('yes')
@@ -53,6 +55,8 @@ $(document).ready(function () {
     $("#weathergroup").html(weathergroup);
     $("#hairproduct").html(hairproduct);
     $("#hairtype").html(hairtype);
+    $("#skinproduct").html(skinproduct);
+    $("skintype").html(skintype);
 
     $("#option1").change(function (e) {
       hairtype = e.target.value;
@@ -78,6 +82,31 @@ $(document).ready(function () {
 
       ReplaceHairImage();
       ReplaceHairText();
+    });
+
+    $("#skin1").change(function (e) {
+      skintype = e.target.value;
+
+      skinTypeAndWeather();
+
+      ReplaceSkinImage();
+      ReplaceSkinText();
+    });
+    $("#skin2").change(function (e) {
+      skintype = e.target.value;
+
+      skinTypeAndWeather();
+
+      ReplaceSkinImage();
+      ReplaceSkinText();
+    });
+    $("#skin3").change(function (e) {
+      skintype = e.target.value;
+
+      skinTypeAndWeather();
+
+      ReplaceSkinImage();
+      ReplaceSkinText();
     });
 
     function hairTypeAndWeather() {
@@ -123,8 +152,52 @@ $(document).ready(function () {
         console.log(hairproduct);
       }
 
-      // console.log(hairtype + ' HELENA ' + hairproduct)
+      // console.log(hairtype + ' WORKING ' + hairproduct)
       // HERE IT IS CONSOLE LOGGING THE CORRECT THING
+    }
+
+    function skinTypeAndWeather() {
+      console.log(weathergroup + skintype)
+      if (weathergroup === 'Rain' && skintype === 'Sensitive/Dry') {
+        var skinproduct = 'dryrain';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Rain' && skintype === 'Combination/Normal') {
+        var skinproduct = 'normalrain';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Rain' && skintype === 'Oily') {
+        var skinproduct = 'oilyrain';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Snow' && skintype === 'Sensitive/Dry') {
+        var skinproduct = 'drysnow';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Snow' && skintype === 'Combination/Normal') {
+        var skinproduct = 'normalsnow';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Snow' && skintype === 'Oily') {
+        var skinproduct = 'oilysnow';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Clear' && skintype === 'Sensitive/Dry') {
+        var skinproduct = 'drysun';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Clear' && skintype === 'Combination/Normal') {
+        var skinproduct = 'normalsun';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Clear' && skintype === 'Oily') {
+        var skinproduct = 'oilysun';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Clouds' && skintype === 'Sensitive/Dry') {
+        var skinproduct = 'drycloud';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Clouds' && skintype === 'Combination/Normal') {
+        var skinproduct = 'normalcloud';
+        console.log(skinproduct);
+      } else if (weathergroup === 'Clouds' && skintype === 'Oily') {
+        var skinproduct = 'oilycloud';
+        console.log(skinproduct);
+      } else {
+        var skinproduct = 'neutral'; //If we have time try and figure out how to have different neutral options for skin type
+        console.log(skinproduct);
+      }
     }
 
     function ReplaceBagImage() {
@@ -212,7 +285,7 @@ $(document).ready(function () {
       } else if (hairproduct === 'straightsnow') {
         document.getElementById('hairproductname').innerHTML = 'OUAI’ Hair Oil'
       } else if (hairproduct === 'afrocloud') {
-        document.getElementById('hairproductname').innerHTML = 'Sheen - Natural Moisturising Spray '
+        document.getElementById('hairproductname').innerHTML = 'Sheen - Natural Moisturising Spray'
       } else if (hairproduct === 'curlycloud') {
         document.getElementById('hairproductname').innerHTML = 'ghd Curl Hold Spray'
       } else if (hairproduct === 'straightcloud') {
@@ -223,6 +296,68 @@ $(document).ready(function () {
     }
 
     // ReplaceHairText();
+
+    function ReplaceSkinImage() {
+
+      if (skinproduct === 'drysun') {
+        document.getElementById('skinproductimage').src = 'images/Dry Sunny.png'
+      } else if (skinproduct === 'normalsun') {
+        document.getElementById('skinproductimage').src = 'images/Normal Sunny.png'
+      } else if (skinproduct === 'oilysun') {
+        document.getElementById('skinproductimage').src = 'images/Oily Sunny.png'
+      } else if (skinproduct === 'dryrain') {
+        document.getElementById('skinproductimage').src = 'images/Dry Rainy.png'
+      } else if (skinproduct === 'normalrain') {
+        document.getElementById('skinproductimage').src = 'images/Normal Rainy.png'
+      } else if (skinproduct === 'oilyrain') {
+        document.getElementById('skinproductimage').src = 'images/Oily Rainy.png'
+      } else if (skinproduct === 'drysnow') {
+        document.getElementById('skinproductimage').src = 'images/Dry Snow.png'
+      } else if (skinproduct === 'normalsnow') {
+        document.getElementById('skinproductimage').src = 'images/Oily Snow.png'
+      } else if (skinproduct === 'oilysnow') {
+        document.getElementById('skinproductimage').src = 'images/Oily Snow.png'
+      } else if (skinproduct === 'drycloud') {
+        document.getElementById('skinproductimage').src = 'images/Dry Neutral.png'
+      } else if (skinproduct === 'normalcloud') {
+        document.getElementById('skinproductimage').src = 'images/Normal Neutral.png'
+      } else if (skinproduct === 'oilycloud') {
+        document.getElementById('skinproductimage').src = 'images/Oily Neutral.png'
+      } else {
+        document.getElementById('skinproductimage').src = 'images/Dry Sunny.png'
+      }
+    }
+
+    function ReplaceSkinText() {
+
+      if (skinproduct === 'drysun') {
+        document.getElementById('skinproductname').innerHTML = 'Avene Mineral Fluid'
+      } else if (skinproduct === 'normalsun') {
+        document.getElementById('skinproductname').innerHTML = 'La Roche-Posay Effaclar H Moisturiser'
+      } else if (skinproduct === 'oilysun') {
+        document.getElementById('skinproductname').innerHTML = 'Paula’s Choice Calm Mineral Moisturiser Broad Spectrum SPF 30 Oily Skin'
+      } else if (skinproduct === 'dryrain') {
+        document.getElementById('skinproductname').innerHTML = 'My Clarins RE-FRESH Hydrating Beauty Mist'
+      } else if (skinproduct === 'normalrain') {
+        document.getElementById('skinproductname').innerHTML = 'Urban Decay Chill Makeup Setting Spray'
+      } else if (skinproduct === 'oilyrain') {
+        document.getElementById('skinproductname').innerHTML = 'Urban Decay De-Slick Setting Spray'
+      } else if (skinproduct === 'drysnow') {
+        document.getElementById('skinproductname').innerHTML = 'La Roche-Posay Hydraphase UV Intense Moisturiser Light'
+      } else if (skinproduct === 'normalsnow') {
+        document.getElementById('skinproductname').innerHTML = 'Urban Decay Heavy Dose All Nighter Setting Spray Duo'
+      } else if (skinproduct === 'oilysnow') {
+        document.getElementById('skinproductname').innerHTML = 'Urban Decay Heavy Dose All Nighter Setting Spray Duo'
+      } else if (skinproduct === 'drycloud') {
+        document.getElementById('skinproductname').innerHTML = 'La Roche-Posay Toleriane Sensitive Fluid Moisturiser'
+      } else if (skinproduct === 'normalcloud') {
+        document.getElementById('skinproductname').innerHTML = 'La Roche-Posay Effaclar H Moisturiser'
+      } else if (skinproduct === 'oilycloud') {
+        document.getElementById('skinproductname').innerHTML = 'Supergel Oil-free Moisturiser M3 For Oily And Acne-prone Skin'
+      } else {
+        document.getElementById('skinproductname').innerHTML = 'Avene Mineral Fluid'
+      }
+    }
   }
 
   var dt = new Date();
