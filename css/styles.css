@@ -204,6 +204,16 @@ h6 {
   right: auto;
 }
 
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-labels {
+text-align: center;
+}
+
 #skinproductimage {
   width: 75%;
   height: 75%;
