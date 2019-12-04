@@ -214,6 +214,14 @@ h6 {
 text-align: center;
 }
 
+.ethos {
+  background-color: white;
+  text-align: center;
+  padding: 10px 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
 #skinproductimage {
   width: 75%;
   height: 75%;
@@ -240,6 +248,13 @@ text-align: center;
   color: white;
 }
 
+#curlyethos {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  color: #66CCFF;
+}
+
 #accountpara {
   text-align: center;
 }
@@ -247,4 +262,8 @@ text-align: center;
 #link {
   color: #48339c;
   text-decoration: underline;
+}
+#ethostext {
+  color: #66CCFF;
+  font-size: 1.5em;
 }
